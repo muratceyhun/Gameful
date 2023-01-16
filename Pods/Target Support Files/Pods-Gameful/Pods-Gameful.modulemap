@@ -1,0 +1,6 @@
+framework module Pods_Gameful {
+  umbrella header "Pods-Gameful-umbrella.h"
+
+  export *
+  module * { export * }
+}
