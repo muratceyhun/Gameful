@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeHeader" reuseIdentifier="" id="U6b-Vx-4bR" customClass="HomeHeader" customModule="Gameful" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUF-V7-sa6" userLabel="TopView">
+                    <rect key="frame" x="23" y="4" width="329" height="31"/>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hNh-nx-YWe">
+                    <rect key="frame" x="0.0" y="16" width="375" height="348"/>
+                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.89171150659999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="VBO-sh-ETO">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="U6b-Vx-4bR" id="qia-fr-o3f"/>
+                        <outlet property="delegate" destination="U6b-Vx-4bR" id="Byo-VK-0vr"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9g-Zg-bXg" userLabel="BottomView">
+                    <rect key="frame" x="23" y="369" width="329" height="31"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" red="0.44193417740000002" green="0.068588760750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="LUF-V7-sa6" firstAttribute="leading" secondItem="b9g-Zg-bXg" secondAttribute="leading" id="3ep-kU-yuD"/>
+                <constraint firstItem="b9g-Zg-bXg" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="23" id="Cal-jV-aWI"/>
+                <constraint firstItem="LUF-V7-sa6" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="Lwp-Mp-eho"/>
+                <constraint firstItem="LUF-V7-sa6" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="4" id="R3M-pK-Ane"/>
+                <constraint firstItem="hNh-nx-YWe" firstAttribute="top" secondItem="LUF-V7-sa6" secondAttribute="bottom" constant="40" id="UV9-pz-SLL"/>
+                <constraint firstItem="hNh-nx-YWe" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="ZYS-zw-kxp"/>
+                <constraint firstItem="hNh-nx-YWe" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="16" id="kAR-K3-VAH"/>
+                <constraint firstItem="LUF-V7-sa6" firstAttribute="trailing" secondItem="b9g-Zg-bXg" secondAttribute="trailing" id="mPM-1t-giG"/>
+                <constraint firstItem="b9g-Zg-bXg" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="qY8-WG-WHT"/>
+                <constraint firstItem="LUF-V7-sa6" firstAttribute="height" secondItem="b9g-Zg-bXg" secondAttribute="height" id="v5o-y2-bwG"/>
+                <constraint firstItem="b9g-Zg-bXg" firstAttribute="top" secondItem="hNh-nx-YWe" secondAttribute="bottom" constant="16" id="y1g-u7-ap6"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="hNh-nx-YWe" secondAttribute="trailing" id="yiB-1T-VA5"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomView" destination="b9g-Zg-bXg" id="H8p-Hj-Pr5"/>
+                <outlet property="collection" destination="hNh-nx-YWe" id="eHC-7n-PXd"/>
+                <outlet property="topView" destination="LUF-V7-sa6" id="K6H-8o-FY1"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="21"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C629771AF700C39A57 /* HomeViewController.swift */; };
+		430CA4C929771B0E00C39A57 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C829771B0E00C39A57 /* SearchViewController.swift */; };
+		430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */; };
+		430CA4CD29771B4700C39A57 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CC29771B4700C39A57 /* EditViewController.swift */; };
+		430CA4CF29771EB700C39A57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CE29771EB700C39A57 /* TabBarController.swift */; };
+		430CA4E32977213000C39A57 /* EnteranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4E22977213000C39A57 /* EnteranceViewController.swift */; };
+		430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4EA2977513300C39A57 /* HomeHeader.swift */; };
+		430CA4ED2977513300C39A57 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430CA4EB2977513300C39A57 /* HomeHeader.xib */; };
+		430CA4F029776F3600C39A57 /* HomeHorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4EE29776F3600C39A57 /* HomeHorizontalCell.swift */; };
+		430CA4F129776F3600C39A57 /* HomeHorizontalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430CA4EF29776F3600C39A57 /* HomeHorizontalCell.xib */; };
 		43CB90902975CE7A001E991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB908F2975CE7A001E991F /* AppDelegate.swift */; };
 		43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90912975CE7A001E991F /* SceneDelegate.swift */; };
-		43CB90942975CE7A001E991F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90932975CE7A001E991F /* ViewController.swift */; };
 		43CB90972975CE7A001E991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CB90952975CE7A001E991F /* Main.storyboard */; };
 		43CB909A2975CE7A001E991F /* Gameful.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90982975CE7A001E991F /* Gameful.xcdatamodeld */; };
 		43CB909C2975CE7A001E991F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CB909B2975CE7A001E991F /* Assets.xcassets */; };
 		43CB909F2975CE7A001E991F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CB909D2975CE7A001E991F /* LaunchScreen.storyboard */; };
 		43D0AD9A2975D3290031903D /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D0AD992975D3290031903D /* InternetManager.swift */; };
 		43D0AD9C2975D33E0031903D /* InternetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D0AD9B2975D33E0031903D /* InternetHelper.swift */; };
+		43E732392978550E003E7C6E /* HomeVerticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E732372978550E003E7C6E /* HomeVerticalCell.swift */; };
+		43E7323A2978550E003E7C6E /* HomeVerticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E732382978550E003E7C6E /* HomeVerticalCell.xib */; };
 		F6F24B3FB73AC21E2F867FC3 /* Pods_Gameful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430CA4C629771AF700C39A57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		430CA4C829771B0E00C39A57 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		430CA4CC29771B4700C39A57 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		430CA4CE29771EB700C39A57 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		430CA4E22977213000C39A57 /* EnteranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteranceViewController.swift; sourceTree = "<group>"; };
+		430CA4EA2977513300C39A57 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		430CA4EB2977513300C39A57 /* HomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
+		430CA4EE29776F3600C39A57 /* HomeHorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHorizontalCell.swift; sourceTree = "<group>"; };
+		430CA4EF29776F3600C39A57 /* HomeHorizontalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHorizontalCell.xib; sourceTree = "<group>"; };
 		43CB908C2975CE7A001E991F /* Gameful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gameful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CB908F2975CE7A001E991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CB90912975CE7A001E991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43CB90932975CE7A001E991F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43CB90962975CE7A001E991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43CB90992975CE7A001E991F /* Gameful.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gameful.xcdatamodel; sourceTree = "<group>"; };
 		43CB909B2975CE7A001E991F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +51,8 @@
 		43CB90A02975CE7A001E991F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D0AD992975D3290031903D /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
 		43D0AD9B2975D33E0031903D /* InternetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetHelper.swift; sourceTree = "<group>"; };
+		43E732372978550E003E7C6E /* HomeVerticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVerticalCell.swift; sourceTree = "<group>"; };
+		43E732382978550E003E7C6E /* HomeVerticalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVerticalCell.xib; sourceTree = "<group>"; };
 		514033EA5888F9ED2213C9CF /* Pods-Gameful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.debug.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gameful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B179F43165C7CCCBF48B5C /* Pods-Gameful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.release.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +87,169 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		430CA4D029771F4400C39A57 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4E22977213000C39A57 /* EnteranceViewController.swift */,
+				430CA4CE29771EB700C39A57 /* TabBarController.swift */,
+				430CA4D129771F5000C39A57 /* Home */,
+				430CA4D229771F5900C39A57 /* Search */,
+				430CA4D329771F6800C39A57 /* Favorite */,
+				430CA4D429771F7000C39A57 /* Edit */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		430CA4D129771F5000C39A57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4D529771FC300C39A57 /* Model */,
+				430CA4D629771FD300C39A57 /* View */,
+				430CA4D729771FD800C39A57 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		430CA4D229771F5900C39A57 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4DA2977202300C39A57 /* Model */,
+				430CA4D92977201B00C39A57 /* View */,
+				430CA4D82977201200C39A57 /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		430CA4D329771F6800C39A57 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4DE2977204800C39A57 /* Model */,
+				430CA4DC2977203700C39A57 /* View */,
+				430CA4DB2977203000C39A57 /* ViewModel */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		430CA4D429771F7000C39A57 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4E12977205C00C39A57 /* Model */,
+				430CA4E02977205700C39A57 /* View */,
+				430CA4DF2977205200C39A57 /* ViewModel */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		430CA4D529771FC300C39A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		430CA4D629771FD300C39A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4E42977313200C39A57 /* Cells */,
+				430CA4C629771AF700C39A57 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		430CA4D729771FD800C39A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430CA4D82977201200C39A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430CA4D92977201B00C39A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4C829771B0E00C39A57 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		430CA4DA2977202300C39A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		430CA4DB2977203000C39A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430CA4DC2977203700C39A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		430CA4DE2977204800C39A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		430CA4DF2977205200C39A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430CA4E02977205700C39A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4CC29771B4700C39A57 /* EditViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		430CA4E12977205C00C39A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		430CA4E42977313200C39A57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4E9297748DF00C39A57 /* Header */,
+				43E732372978550E003E7C6E /* HomeVerticalCell.swift */,
+				43E732382978550E003E7C6E /* HomeVerticalCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		430CA4E9297748DF00C39A57 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4EE29776F3600C39A57 /* HomeHorizontalCell.swift */,
+				430CA4EF29776F3600C39A57 /* HomeHorizontalCell.xib */,
+				430CA4EA2977513300C39A57 /* HomeHeader.swift */,
+				430CA4EB2977513300C39A57 /* HomeHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		43CB90832975CE79001E991F = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +271,10 @@
 		43CB908E2975CE7A001E991F /* Gameful */ = {
 			isa = PBXGroup;
 			children = (
+				430CA4D029771F4400C39A57 /* Scene */,
 				43D0AD982975D25A0031903D /* InternetService */,
 				43CB908F2975CE7A001E991F /* AppDelegate.swift */,
 				43CB90912975CE7A001E991F /* SceneDelegate.swift */,
-				43CB90932975CE7A001E991F /* ViewController.swift */,
 				43CB90952975CE7A001E991F /* Main.storyboard */,
 				43CB909B2975CE7A001E991F /* Assets.xcassets */,
 				43CB909D2975CE7A001E991F /* LaunchScreen.storyboard */,
@@ -168,6 +353,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E7323A2978550E003E7C6E /* HomeVerticalCell.xib in Resources */,
+				430CA4ED2977513300C39A57 /* HomeHeader.xib in Resources */,
+				430CA4F129776F3600C39A57 /* HomeHorizontalCell.xib in Resources */,
 				43CB909F2975CE7A001E991F /* LaunchScreen.storyboard in Resources */,
 				43CB909C2975CE7A001E991F /* Assets.xcassets in Resources */,
 				43CB90972975CE7A001E991F /* Main.storyboard in Resources */,
@@ -223,12 +411,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43CB90942975CE7A001E991F /* ViewController.swift in Sources */,
 				43CB909A2975CE7A001E991F /* Gameful.xcdatamodeld in Sources */,
+				430CA4C929771B0E00C39A57 /* SearchViewController.swift in Sources */,
+				43E732392978550E003E7C6E /* HomeVerticalCell.swift in Sources */,
 				43CB90902975CE7A001E991F /* AppDelegate.swift in Sources */,
+				430CA4CF29771EB700C39A57 /* TabBarController.swift in Sources */,
+				430CA4F029776F3600C39A57 /* HomeHorizontalCell.swift in Sources */,
 				43D0AD9A2975D3290031903D /* InternetManager.swift in Sources */,
+				430CA4E32977213000C39A57 /* EnteranceViewController.swift in Sources */,
+				430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */,
 				43D0AD9C2975D33E0031903D /* InternetHelper.swift in Sources */,
 				43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */,
+				430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */,
+				430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */,
+				430CA4CD29771B4700C39A57 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
