@@ -18,6 +18,8 @@ class InternetHelper {
     // All games url address regardless of category.
     // https://api.rawg.io/api/games?key=2bc9a39de38844e0afee58925b2a3480
     
+    
+    
     static let shared = InternetHelper()
     private let baseURL = "https://api.rawg.io/api/"
     private let apiKey = "2bc9a39de38844e0afee58925b2a3480"
@@ -25,7 +27,7 @@ class InternetHelper {
     private let filterPlatforms = "platforms?key="
     
     func requestUrl(url: String) -> String {
-        baseURL + filterGames + apiKey
+        baseURL + filterGames + apiKey + url
     }
     
     func getImagePath(url: String) -> () {
