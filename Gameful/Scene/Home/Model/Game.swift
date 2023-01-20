@@ -82,14 +82,14 @@ struct GameResult: Codable, GameCellProtocol {
     let shortScreenshots: [ShortScreenshot]?
     
     var gamePosterImage: String {
-        ""
+        InternetHelper.shared.getImagePath(url: backgroundImage ?? "")
     }
     var gameTitleText: String {
         name ?? ""
     }
     var ratingText: String {
         if let rating = rating {
-            return "\(rating)/5"
+            return "\(rating) / 5"
         }
         return ""
     }
@@ -263,4 +263,6 @@ class JSONNull: Codable, Hashable {
         try container.encodeNil()
     }
 }
+
+
 

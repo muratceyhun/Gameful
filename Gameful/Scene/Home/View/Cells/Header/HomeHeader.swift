@@ -13,13 +13,18 @@ class HomeHeader: UICollectionReusableView {
     @IBOutlet private weak var collection: UICollectionView!
     @IBOutlet private weak var bottomView: UIView!
     
+    var items = [GameResult]()
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
         collection.register(UINib(nibName: "HomeHorizontalCell", bundle: nil), forCellWithReuseIdentifier: "HomeHorizontalCell")
-
     }
     
+    func configure(data: [GameResult]) {
+        items = data
+        collection.reloadData()
+    }
 }
 
 
@@ -31,18 +36,15 @@ extension HomeHeader: UICollectionViewDelegate {
 
 extension HomeHeader: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeHorizontalCell", for: indexPath) as! HomeHorizontalCell
+        cell.configure(data: items[indexPath.item])
         return cell
     }
-    
-    
-
 }
-
 
 extension HomeHeader: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

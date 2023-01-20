@@ -25,12 +25,16 @@ class InternetHelper {
     private let apiKey = "2bc9a39de38844e0afee58925b2a3480"
     private let filterGames = "games?key="
     private let filterPlatforms = "platforms?key="
+    private let imageBasePath = "https://media.rawg.io/media/games/"
     
     func requestUrl(url: String) -> String {
         baseURL + filterGames + apiKey + url
     }
     
-    func getImagePath(url: String) -> () {
-        //TODO:
+    func getImagePath(url: String) -> String {
+        url
     }
+    
+//https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg (An example image url)
+    
 }

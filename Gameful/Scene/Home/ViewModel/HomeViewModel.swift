@@ -10,6 +10,7 @@ import Foundation
 class HomeViewModel {
     let manager = HomeManager.shared
     var game: Game?
+    var gameItems = [GameResult]()
     var errorCallBack: ((String)->())?
     var successCallBack: (()->())?
     
@@ -23,4 +24,15 @@ class HomeViewModel {
             }
         }
     }
+    
+//    func getPopularGameItems() {
+//        manager.getPopularGames { [weak self] game, error in
+//            if let error = error {
+//                self?.errorCallBack?(error.localizedDescription)
+//            } else {
+//                self?.game = game
+//                self?.successCallBack?()
+//            }
+//        }
+//    }
 }

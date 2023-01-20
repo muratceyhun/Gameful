@@ -23,18 +23,15 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func viewModelConfiguation() {
-        
         viewModel.getAllGameItems()
+//        viewModel.getPopularGameItems()
         viewModel.errorCallBack = { [weak self] errorMessage in
             print("ERROR: \(errorMessage)")
         }
         viewModel.successCallBack = { [weak self] in
             self?.collection.reloadData()
-            
         }
-        
     }
-    
     @IBAction func filterButtonClicked(_ sender: Any) {
         print("clicked")
     }
@@ -53,7 +50,7 @@ extension HomeViewController: UICollectionViewDelegate {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.game?.results?.count ?? .zero
+        viewModel.game?.results?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,16 +65,15 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.width * 327 / 275, height: 120)
     }
-    
- 
-    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header: HomeHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeHeader", for: indexPath) as! HomeHeader
-        header.backgroundColor = .red
+        if let results = viewModel.game?.results {
+            header.configure(data: results)
+        }
         return header
     }
     

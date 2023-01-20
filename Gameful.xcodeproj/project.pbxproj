@@ -21,6 +21,7 @@
 		4315E61C297A8049008EF84E /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61B297A8049008EF84E /* HomeManager.swift */; };
 		4315E61E297A8B9B008EF84E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61D297A8B9B008EF84E /* Game.swift */; };
 		4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61F297A9002008EF84E /* HomeViewModel.swift */; };
+		4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E623297B315C008EF84E /* UIImageView+Extension.swift */; };
 		43CB90902975CE7A001E991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB908F2975CE7A001E991F /* AppDelegate.swift */; };
 		43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90912975CE7A001E991F /* SceneDelegate.swift */; };
 		43CB90972975CE7A001E991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CB90952975CE7A001E991F /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		4315E61B297A8049008EF84E /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		4315E61D297A8B9B008EF84E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4315E61F297A9002008EF84E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4315E623297B315C008EF84E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		43CB908C2975CE7A001E991F /* Gameful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gameful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CB908F2975CE7A001E991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CB90912975CE7A001E991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -278,6 +280,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		4315E622297B3129008EF84E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4315E623297B315C008EF84E /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		43CB90832975CE79001E991F = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +309,7 @@
 		43CB908E2975CE7A001E991F /* Gameful */ = {
 			isa = PBXGroup;
 			children = (
+				4315E622297B3129008EF84E /* Extension */,
 				430CA4D029771F4400C39A57 /* Scene */,
 				43D0AD982975D25A0031903D /* InternetService */,
 				43CB908F2975CE7A001E991F /* AppDelegate.swift */,
@@ -315,8 +326,8 @@
 		43D0AD982975D25A0031903D /* InternetService */ = {
 			isa = PBXGroup;
 			children = (
-				4315E618297A7FA9008EF84E /* Home */,
 				4315E617297A7FA3008EF84E /* Main */,
+				4315E618297A7FA9008EF84E /* Home */,
 			);
 			path = InternetService;
 			sourceTree = "<group>";
@@ -456,6 +467,7 @@
 				4315E61E297A8B9B008EF84E /* Game.swift in Sources */,
 				430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */,
 				430CA4CD29771B4700C39A57 /* EditViewController.swift in Sources */,
+				4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */,
 				4315E61A297A803B008EF84E /* HomeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

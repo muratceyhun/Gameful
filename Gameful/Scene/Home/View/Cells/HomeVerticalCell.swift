@@ -9,7 +9,6 @@ import UIKit
 import SDWebImage
 
 protocol GameCellProtocol {
-    
     var gamePosterImage: String { get }
     var gameTitleText: String { get }
     var ratingText: String { get }
@@ -25,6 +24,7 @@ class HomeVerticalCell: UICollectionViewCell {
         
         gameTitle.text = data.gameTitleText
         ratingLabel.text = data.ratingText
+        gameImage.loadURL(url: data.gamePosterImage)
         
     }
 }

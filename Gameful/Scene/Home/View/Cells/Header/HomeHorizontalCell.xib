@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,33 +17,64 @@
                 <rect key="frame" x="0.0" y="0.0" width="143" height="283"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16C-w9-YIc">
-                        <rect key="frame" x="0.0" y="0.0" width="143" height="216"/>
-                        <color key="backgroundColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16C-w9-YIc">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="215"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FM 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUf-DQ-pPa">
-                        <rect key="frame" x="0.0" y="224" width="143" height="20.333333333333343"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lord Of The Rings II" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUf-DQ-pPa">
+                        <rect key="frame" x="0.0" y="223" width="143" height="39"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g9h-gC-Hhl">
+                        <rect key="frame" x="0.0" y="270.66666666666669" width="12" height="11.666666666666686"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="Br3-XI-yZU"/>
+                            <constraint firstAttribute="height" constant="12" id="ayn-VO-KYH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.9/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSS-V0-fK3">
+                        <rect key="frame" x="16" y="270" width="119" height="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="GUf-DQ-pPa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FYF-vI-zta"/>
-                <constraint firstItem="16C-w9-YIc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HlB-2m-luQ"/>
-                <constraint firstAttribute="trailing" secondItem="16C-w9-YIc" secondAttribute="trailing" id="h5B-wj-4tV"/>
-                <constraint firstItem="16C-w9-YIc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kxb-An-cat"/>
-                <constraint firstItem="16C-w9-YIc" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.964286" id="las-9b-0uT"/>
-                <constraint firstAttribute="trailing" secondItem="GUf-DQ-pPa" secondAttribute="trailing" id="sfh-dM-buq"/>
-                <constraint firstItem="GUf-DQ-pPa" firstAttribute="top" secondItem="16C-w9-YIc" secondAttribute="bottom" constant="8" id="vCT-K8-YIH"/>
+                <constraint firstItem="GUf-DQ-pPa" firstAttribute="top" secondItem="16C-w9-YIc" secondAttribute="bottom" constant="8" id="1Uy-7A-J5K"/>
+                <constraint firstItem="16C-w9-YIc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TDm-PS-HvH"/>
+                <constraint firstItem="16C-w9-YIc" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.759717" id="UAm-b2-zMp"/>
+                <constraint firstAttribute="trailing" secondItem="DSS-V0-fK3" secondAttribute="trailing" constant="8" id="b1T-ET-ylE"/>
+                <constraint firstItem="DSS-V0-fK3" firstAttribute="top" relation="lessThanOrEqual" secondItem="GUf-DQ-pPa" secondAttribute="bottom" constant="8" id="daB-8B-dZE"/>
+                <constraint firstItem="DSS-V0-fK3" firstAttribute="leading" secondItem="g9h-gC-Hhl" secondAttribute="trailing" constant="4" id="iU0-5z-voM"/>
+                <constraint firstAttribute="trailing" secondItem="GUf-DQ-pPa" secondAttribute="trailing" id="lH7-83-sou"/>
+                <constraint firstItem="GUf-DQ-pPa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m5Q-1u-JhI"/>
+                <constraint firstAttribute="bottom" secondItem="g9h-gC-Hhl" secondAttribute="bottom" id="nh7-SL-OZt"/>
+                <constraint firstItem="16C-w9-YIc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pOO-Mw-04o"/>
+                <constraint firstItem="g9h-gC-Hhl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="py0-q1-SfB"/>
+                <constraint firstItem="DSS-V0-fK3" firstAttribute="centerY" secondItem="g9h-gC-Hhl" secondAttribute="centerY" id="q1n-c6-XcL"/>
+                <constraint firstAttribute="trailing" secondItem="16C-w9-YIc" secondAttribute="trailing" id="sUN-2h-oTv"/>
             </constraints>
             <connections>
                 <outlet property="gameImage" destination="16C-w9-YIc" id="bpG-9m-cKs"/>
                 <outlet property="gameTitle" destination="GUf-DQ-pPa" id="S6d-u9-z05"/>
+                <outlet property="ratingLabel" destination="DSS-V0-fK3" id="c7x-wz-1Kz"/>
             </connections>
             <point key="canvasLocation" x="133.58778625954199" y="19.366197183098592"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
