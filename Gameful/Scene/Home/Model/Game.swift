@@ -8,6 +8,8 @@
 import Foundation
 
 
+// For this part QuickType has been used.
+
 
 // MARK: - Game
 struct Game: Codable {
@@ -53,8 +55,9 @@ struct YearYear: Codable {
     let nofollow: Bool?
 }
 
-// MARK: - Result
-struct GameResult: Codable {
+// MARK: - GameResult
+struct GameResult: Codable, GameCellProtocol {
+    
     let id: Int?
     let slug, name, released: String?
     let tba: Bool?
@@ -77,6 +80,19 @@ struct GameResult: Codable {
     let tags: [Genre]?
     let esrbRating: EsrbRating?
     let shortScreenshots: [ShortScreenshot]?
+    
+    var gamePosterImage: String {
+        ""
+    }
+    var gameTitleText: String {
+        name ?? ""
+    }
+    var ratingText: String {
+        if let rating = rating {
+            return "\(rating)/5"
+        }
+        return ""
+    }
 
     enum CodingKeys: String, CodingKey {
         case id, slug, name, released, tba

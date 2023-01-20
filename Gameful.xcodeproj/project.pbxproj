@@ -20,6 +20,7 @@
 		4315E61A297A803B008EF84E /* HomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E619297A803B008EF84E /* HomeHelper.swift */; };
 		4315E61C297A8049008EF84E /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61B297A8049008EF84E /* HomeManager.swift */; };
 		4315E61E297A8B9B008EF84E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61D297A8B9B008EF84E /* Game.swift */; };
+		4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61F297A9002008EF84E /* HomeViewModel.swift */; };
 		43CB90902975CE7A001E991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB908F2975CE7A001E991F /* AppDelegate.swift */; };
 		43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90912975CE7A001E991F /* SceneDelegate.swift */; };
 		43CB90972975CE7A001E991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CB90952975CE7A001E991F /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		4315E619297A803B008EF84E /* HomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelper.swift; sourceTree = "<group>"; };
 		4315E61B297A8049008EF84E /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		4315E61D297A8B9B008EF84E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4315E61F297A9002008EF84E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		43CB908C2975CE7A001E991F /* Gameful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gameful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CB908F2975CE7A001E991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CB90912975CE7A001E991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		4315E616297A7F33008EF84E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4315E61F297A9002008EF84E /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4315E61C297A8049008EF84E /* HomeManager.swift in Sources */,
+				4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */,
 				43CB909A2975CE7A001E991F /* Gameful.xcdatamodeld in Sources */,
 				430CA4C929771B0E00C39A57 /* SearchViewController.swift in Sources */,
 				43E732392978550E003E7C6E /* HomeVerticalCell.swift in Sources */,

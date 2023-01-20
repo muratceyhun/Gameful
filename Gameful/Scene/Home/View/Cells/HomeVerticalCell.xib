@@ -31,25 +31,48 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Yg-3i-7HA">
+                        <rect key="frame" x="97" y="25.666666666666668" width="16" height="15.666666666666661"/>
+                        <color key="tintColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="CvR-EN-Gr2"/>
+                            <constraint firstAttribute="width" constant="16" id="jP2-0F-OdN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.4 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-g6-fwo">
+                        <rect key="frame" x="124" y="26.999999999999996" width="191" height="14.333333333333332"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="kA5-lj-F90" firstAttribute="top" secondItem="tJF-Vj-eei" secondAttribute="top" id="0yo-BS-EqZ"/>
                 <constraint firstItem="tJF-Vj-eei" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Ls-di-xDN"/>
+                <constraint firstItem="oNa-g6-fwo" firstAttribute="leading" secondItem="8Yg-3i-7HA" secondAttribute="trailing" constant="11" id="7qh-kv-C8t"/>
+                <constraint firstItem="oNa-g6-fwo" firstAttribute="centerY" secondItem="8Yg-3i-7HA" secondAttribute="centerY" id="BMu-29-9Ge"/>
                 <constraint firstItem="kA5-lj-F90" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tJF-Vj-eei" secondAttribute="trailing" constant="12" id="Jrr-zf-C2K"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kA5-lj-F90" secondAttribute="trailing" constant="12" id="UpM-pa-N0J"/>
+                <constraint firstItem="oNa-g6-fwo" firstAttribute="trailing" secondItem="kA5-lj-F90" secondAttribute="trailing" id="VM3-c7-XHh"/>
                 <constraint firstItem="kA5-lj-F90" firstAttribute="leading" secondItem="tJF-Vj-eei" secondAttribute="trailing" constant="12" id="cKI-KD-2HV"/>
                 <constraint firstItem="tJF-Vj-eei" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ewY-CU-sVa"/>
                 <constraint firstAttribute="bottom" secondItem="tJF-Vj-eei" secondAttribute="bottom" id="g8N-Px-S4T"/>
                 <constraint firstAttribute="trailing" secondItem="kA5-lj-F90" secondAttribute="trailing" constant="12" id="gmg-rt-E9N"/>
+                <constraint firstItem="8Yg-3i-7HA" firstAttribute="top" secondItem="kA5-lj-F90" secondAttribute="bottom" constant="8" id="lzy-ia-uYv"/>
+                <constraint firstItem="8Yg-3i-7HA" firstAttribute="leading" secondItem="kA5-lj-F90" secondAttribute="leading" id="qua-c5-Tdp"/>
                 <constraint firstItem="tJF-Vj-eei" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.259939" id="wLn-e9-nfB"/>
             </constraints>
             <connections>
                 <outlet property="gameImage" destination="tJF-Vj-eei" id="YUz-Zx-Cx6"/>
                 <outlet property="gameTitle" destination="kA5-lj-F90" id="k4L-G8-od4"/>
+                <outlet property="ratingLabel" destination="oNa-g6-fwo" id="bT7-zg-coT"/>
             </connections>
             <point key="canvasLocation" x="61.832061068702288" y="20.422535211267608"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
 </document>
