@@ -9,7 +9,7 @@ import Foundation
 
 protocol HomeManagerProtocol {
     func getAllGames(complete: @escaping((Game?, Error?)->()))
-//    func getPopularGames(complete: @escaping((Game?, Error?)->()))
+    func getCategoryGames(category:HomeEndPoint, complete: @escaping((Game?, Error?)->()))
 }
 
 class HomeManager: HomeManagerProtocol {
@@ -29,18 +29,22 @@ class HomeManager: HomeManagerProtocol {
         }
     }
     
-//    func getPopularGames(complete: @escaping ((Game?, Error?)->())) {
-//        InternetManager.shared.request(type: Game.self,
-//                                       url: HomeEndPoint.popularity.path,
-//                                       method: .get) { response in
-//            switch response {
-//            case .success(let data):
-//                complete(data, nil)
-//            case .failure(let error):
-//                complete(nil, error)
-//            }
-//        }
-//    }
+    func getCategoryGames(category:HomeEndPoint, complete: @escaping ((Game?, Error?) -> ())) {
+        InternetManager.shared.request(type: Game.self,
+                                       url: HomeEndPoint.all.path,
+                                       method: .get) { response in
+            switch response {
+            case .success(let data):
+                complete(data, nil)
+                print(data)
+            case .failure(let error):
+                complete(nil, error)
+            }
+        }
+    }
+    
+    
+    
 }
 
 
