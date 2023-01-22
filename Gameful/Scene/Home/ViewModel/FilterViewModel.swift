@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+
+
+class FilterViewModel {
+    var items = [FilterModel(title: "All", category: .all),
+                 FilterModel(title: "Popularity", category: .popularity),
+                 FilterModel(title: "Average Rating", category: .averageRating),
+                 FilterModel(title: "Release Date", category: .releaseDate)]
+}
+

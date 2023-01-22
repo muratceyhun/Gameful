@@ -8,8 +8,10 @@
 import Foundation
 
 class HomeViewModel {
+    var coordinator: HomeCoordinator?
     let manager = HomeManager.shared
     var game: Game?
+    var gameCategory: HomeEndPoint = .all
     var gameItems = [GameResult]()
     var errorCallBack: ((String)->())?
     var successCallBack: (()->())?
@@ -25,30 +27,16 @@ class HomeViewModel {
         }
     }
     
-
-    func getCategoryGames(category:HomeEndPoint, complete: @escaping ((Game?, Error?) -> ())) {
-        var url = ""
-        switch category {
-        case .all:
-            url = HomeEndPoint.all.path
-        case .genres:
-            url = HomeEndPoint.genres.path
-        case .popularity:
-            url = HomeEndPoint.popularity.path
-        case .averageRating:
-            url = HomeEndPoint.averageRating.path
-        case .releaseDate:
-            url = HomeEndPoint.releaseDate.path
-        }
-        InternetManager.shared.request(type: Game.self,
-                                       url: url,
-                                       method: .get) { response in
-            switch response {
-            case .success(let data):
-                complete(data, nil)
-                print(data)
-            case .failure(let error):
-                complete(nil, error)
+    func getCategoryItems() {
+        manager.getCategoryGames(category: gameCategory) { [weak self] game, error in
+            if let error = error {
+                self?.errorCallBack?(error.localizedDescription)
+            } else {
+                self?.game = game
+                if let gameItems = game?.results, !gameItems.isEmpty {
+                    self?.gameItems.append(contentsOf: gameItems)
+                }
+                self?.successCallBack?()
             }
         }
     }

@@ -24,7 +24,7 @@ enum GameCategory {
 enum HomeEndPoint: String {
     case all = ""
     case genres = "&genre"
-    case popularity = "&popularity"
+    case popularity = "&popularity111"
     case averageRating = "&averageRating"
     case releaseDate = "&releaseDate"
     

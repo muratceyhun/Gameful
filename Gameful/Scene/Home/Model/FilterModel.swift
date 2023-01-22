@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+
+struct FilterModel {
+    let title: String
+    let category: HomeEndPoint
+}
