@@ -56,8 +56,7 @@ struct YearYear: Codable {
 }
 
 // MARK: - GameResult
-struct GameResult: Codable, GameCellProtocol {
-    
+struct GameResult: Codable, GameCellProtocol {    
     let id: Int?
     let slug, name, released: String?
     let tba: Bool?
@@ -81,6 +80,9 @@ struct GameResult: Codable, GameCellProtocol {
     let esrbRating: EsrbRating?
     let shortScreenshots: [ShortScreenshot]?
     
+    var gameID: Int {
+        id ?? .zero
+    }
     var gamePosterImage: String {
         InternetHelper.shared.getImagePath(url: backgroundImage ?? "")
     }
@@ -92,6 +94,9 @@ struct GameResult: Codable, GameCellProtocol {
             return "\(rating) / 5"
         }
         return ""
+    }
+    var releaseDateText: String {
+        released ?? ""
     }
 
     enum CodingKeys: String, CodingKey {

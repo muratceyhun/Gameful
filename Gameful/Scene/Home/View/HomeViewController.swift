@@ -49,9 +49,7 @@ class HomeViewController: UIViewController {
 //        present(destinationVC, animated: true,completion: nil)
         }
     
-//MARK: -UICollectionViewDelegate
-extension HomeViewController: UICollectionViewDelegate {
-}
+
 //MARK: -UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -69,6 +67,22 @@ extension HomeViewController: UICollectionViewDataSource {
         CGSize(width: collectionView.frame.width * 327 / 275, height: 120)
     }
 }
+
+//MARK: -UICollectionViewDelegate
+extension HomeViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            destinationVC.gamePhoto = viewModel.game?.results?[indexPath.item].gamePosterImage ?? ""
+            destinationVC.gameIdNumber = viewModel.game?.results?[indexPath.item].gameID ?? .zero
+            destinationVC.gameTitleName = viewModel.game?.results?[indexPath.item].gameTitleText ?? ""
+            destinationVC.rating = viewModel.game?.results?[indexPath.item].ratingText ?? ""
+            destinationVC.releaseDate = viewModel.game?.results?[indexPath.item].releaseDateText ?? ""
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }
+    }
+}
+
 //MARK: -UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -82,7 +96,4 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 365)
     }
-    
-
-    
 }

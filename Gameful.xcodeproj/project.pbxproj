@@ -22,6 +22,7 @@
 		4315E61E297A8B9B008EF84E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61D297A8B9B008EF84E /* Game.swift */; };
 		4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61F297A9002008EF84E /* HomeViewModel.swift */; };
 		4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E623297B315C008EF84E /* UIImageView+Extension.swift */; };
+		436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B2881297D1E4F00260337 /* DetailViewController.swift */; };
 		43903E0E297BF6760079F0D7 /* SearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E0D297BF6760079F0D7 /* SearchHelper.swift */; };
 		43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E0F297BF68A0079F0D7 /* SearchManager.swift */; };
 		43903E12297BFA0D0079F0D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E11297BFA0D0079F0D7 /* SearchViewModel.swift */; };
@@ -62,6 +63,7 @@
 		4315E61D297A8B9B008EF84E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4315E61F297A9002008EF84E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4315E623297B315C008EF84E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		436B2881297D1E4F00260337 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		43903E0D297BF6760079F0D7 /* SearchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelper.swift; sourceTree = "<group>"; };
 		43903E0F297BF68A0079F0D7 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		43903E11297BFA0D0079F0D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				430CA4E22977213000C39A57 /* EnteranceViewController.swift */,
 				430CA4CE29771EB700C39A57 /* TabBarController.swift */,
 				430CA4D129771F5000C39A57 /* Home */,
+				436B2883297D316400260337 /* Detail */,
 				430CA4D229771F5900C39A57 /* Search */,
 				430CA4D329771F6800C39A57 /* Favorite */,
 				430CA4D429771F7000C39A57 /* Edit */,
@@ -315,6 +318,38 @@
 				4315E623297B315C008EF84E /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		436B2883297D316400260337 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				436B2886297D31F300260337 /* Model */,
+				436B2885297D31EC00260337 /* View */,
+				436B2884297D31DC00260337 /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		436B2884297D31DC00260337 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		436B2885297D31EC00260337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				436B2881297D1E4F00260337 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		436B2886297D31F300260337 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		43903E0C297BE9FB0079F0D7 /* Search */ = {
@@ -519,6 +554,7 @@
 				430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */,
 				43D0AD9C2975D33E0031903D /* InternetHelper.swift in Sources */,
 				43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */,
+				436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */,
 				430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */,
 				4315E61E297A8B9B008EF84E /* Game.swift in Sources */,
 				43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */,
