@@ -10,7 +10,7 @@
 		430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C629771AF700C39A57 /* HomeViewController.swift */; };
 		430CA4C929771B0E00C39A57 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C829771B0E00C39A57 /* SearchViewController.swift */; };
 		430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */; };
-		430CA4CD29771B4700C39A57 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CC29771B4700C39A57 /* EditViewController.swift */; };
+		430CA4CD29771B4700C39A57 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CC29771B4700C39A57 /* NoteViewController.swift */; };
 		430CA4CF29771EB700C39A57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CE29771EB700C39A57 /* TabBarController.swift */; };
 		430CA4E32977213000C39A57 /* EnteranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4E22977213000C39A57 /* EnteranceViewController.swift */; };
 		430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4EA2977513300C39A57 /* HomeHeader.swift */; };
@@ -23,6 +23,7 @@
 		4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61F297A9002008EF84E /* HomeViewModel.swift */; };
 		4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E623297B315C008EF84E /* UIImageView+Extension.swift */; };
 		436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B2881297D1E4F00260337 /* DetailViewController.swift */; };
+		4372541B297DF3C100D2047E /* SaveNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372541A297DF3C100D2047E /* SaveNoteViewController.swift */; };
 		43903E0E297BF6760079F0D7 /* SearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E0D297BF6760079F0D7 /* SearchHelper.swift */; };
 		43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E0F297BF68A0079F0D7 /* SearchManager.swift */; };
 		43903E12297BFA0D0079F0D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E11297BFA0D0079F0D7 /* SearchViewModel.swift */; };
@@ -44,6 +45,7 @@
 		43D0AD9C2975D33E0031903D /* InternetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D0AD9B2975D33E0031903D /* InternetHelper.swift */; };
 		43E732392978550E003E7C6E /* HomeVerticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E732372978550E003E7C6E /* HomeVerticalCell.swift */; };
 		43E7323A2978550E003E7C6E /* HomeVerticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E732382978550E003E7C6E /* HomeVerticalCell.xib */; };
+		43FBD7B8297E06F100B30EBF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */; };
 		F6F24B3FB73AC21E2F867FC3 /* Pods_Gameful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +53,7 @@
 		430CA4C629771AF700C39A57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		430CA4C829771B0E00C39A57 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		430CA4CC29771B4700C39A57 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		430CA4CC29771B4700C39A57 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		430CA4CE29771EB700C39A57 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		430CA4E22977213000C39A57 /* EnteranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteranceViewController.swift; sourceTree = "<group>"; };
 		430CA4EA2977513300C39A57 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		4315E61F297A9002008EF84E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4315E623297B315C008EF84E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		436B2881297D1E4F00260337 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4372541A297DF3C100D2047E /* SaveNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteViewController.swift; sourceTree = "<group>"; };
 		43903E0D297BF6760079F0D7 /* SearchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelper.swift; sourceTree = "<group>"; };
 		43903E0F297BF68A0079F0D7 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		43903E11297BFA0D0079F0D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		43D0AD9B2975D33E0031903D /* InternetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetHelper.swift; sourceTree = "<group>"; };
 		43E732372978550E003E7C6E /* HomeVerticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVerticalCell.swift; sourceTree = "<group>"; };
 		43E732382978550E003E7C6E /* HomeVerticalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVerticalCell.xib; sourceTree = "<group>"; };
+		43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		514033EA5888F9ED2213C9CF /* Pods-Gameful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.debug.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gameful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B179F43165C7CCCBF48B5C /* Pods-Gameful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.release.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +134,7 @@
 				436B2883297D316400260337 /* Detail */,
 				430CA4D229771F5900C39A57 /* Search */,
 				430CA4D329771F6800C39A57 /* Favorite */,
-				430CA4D429771F7000C39A57 /* Edit */,
+				430CA4D429771F7000C39A57 /* Note */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -166,14 +170,12 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
-		430CA4D429771F7000C39A57 /* Edit */ = {
+		430CA4D429771F7000C39A57 /* Note */ = {
 			isa = PBXGroup;
 			children = (
-				430CA4E12977205C00C39A57 /* Model */,
 				430CA4E02977205700C39A57 /* View */,
-				430CA4DF2977205200C39A57 /* ViewModel */,
 			);
-			path = Edit;
+			path = Note;
 			sourceTree = "<group>";
 		};
 		430CA4D629771FD300C39A57 /* View */ = {
@@ -231,26 +233,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		430CA4DF2977205200C39A57 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		430CA4E02977205700C39A57 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				430CA4CC29771B4700C39A57 /* EditViewController.swift */,
+				430CA4CC29771B4700C39A57 /* NoteViewController.swift */,
+				4372541A297DF3C100D2047E /* SaveNoteViewController.swift */,
+				43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		430CA4E12977205C00C39A57 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		430CA4E42977313200C39A57 /* Cells */ = {
@@ -549,6 +539,7 @@
 				430CA4F029776F3600C39A57 /* HomeHorizontalCell.swift in Sources */,
 				43903E16297C31F10079F0D7 /* FilterViewModel.swift in Sources */,
 				43D0AD9A2975D3290031903D /* InternetManager.swift in Sources */,
+				43FBD7B8297E06F100B30EBF /* CoreDataManager.swift in Sources */,
 				43903E1B297C34D80079F0D7 /* FilterTableViewTitleCell.swift in Sources */,
 				430CA4E32977213000C39A57 /* EnteranceViewController.swift in Sources */,
 				430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */,
@@ -557,12 +548,13 @@
 				436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */,
 				430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */,
 				4315E61E297A8B9B008EF84E /* Game.swift in Sources */,
+				4372541B297DF3C100D2047E /* SaveNoteViewController.swift in Sources */,
 				43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */,
 				43903E30297C64650079F0D7 /* Storyboard File.swift in Sources */,
 				43903E0E297BF6760079F0D7 /* SearchHelper.swift in Sources */,
 				43903E18297C32F60079F0D7 /* FilterModel.swift in Sources */,
 				430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */,
-				430CA4CD29771B4700C39A57 /* EditViewController.swift in Sources */,
+				430CA4CD29771B4700C39A57 /* NoteViewController.swift in Sources */,
 				4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */,
 				4315E61A297A803B008EF84E /* HomeHelper.swift in Sources */,
 			);
@@ -720,6 +712,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -749,6 +742,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
