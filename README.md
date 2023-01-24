@@ -8,7 +8,13 @@ You can search any game you are interested in and also put them in your favorite
 Additionally, you can take a note about the game if you want.
 
 
-<img width="386" alt="Screenshot 2023-01-25 at 00 15 43" src="https://user-images.githubusercontent.com/95974560/214426216-82b66cb0-ee1d-4d42-9f41-97c5ab47bf7c.png">
+<img width="386" alt="1" src="https://user-images.githubusercontent.com/95974560/214427367-a8cff922-29a5-47e5-b655-32c3e8f1c013.png">
+<img width="388" alt="2" src="https://user-images.githubusercontent.com/95974560/214427376-d6372993-76aa-4dc7-8363-317b422e0876.png">
+<img width="392" alt="3" src="https://user-images.githubusercontent.com/95974560/214427382-787142e8-10ab-4fcd-9eb5-8062b443dc6c.png">
+<img width="389" alt="4" src="https://user-images.githubusercontent.com/95974560/214427385-dcf22ed1-efdc-4475-a67e-551fe64ae196.png">
+<img width="381" alt="5" src="https://user-images.githubusercontent.com/95974560/214427389-ec3177ba-46b7-4252-b67f-7a55b764941c.png">
+<img width="386" alt="6" src="https://user-images.githubusercontent.com/95974560/214427395-da1df25d-7168-4b4f-a71b-2a4fd7a30a3e.png">
+
 
 ## Developer
 
