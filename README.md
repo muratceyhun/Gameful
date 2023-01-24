@@ -7,6 +7,9 @@ You can sort the game list by rating, popularity, release date and so on...
 You can search any game you are interested in and also put them in your favorite list.
 Additionally, you can take a note about the game if you want.
 
+
+<img width="386" alt="Screenshot 2023-01-25 at 00 15 43" src="https://user-images.githubusercontent.com/95974560/214426216-82b66cb0-ee1d-4d42-9f41-97c5ab47bf7c.png">
+
 ## Developer
 
  - Murat Ceyhun Körpeoğlu <muratceyhunkorpeoglu@gmail.com>
