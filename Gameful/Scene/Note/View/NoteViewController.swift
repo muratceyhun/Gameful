@@ -18,6 +18,7 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addNotes))
+        navigationController?.navigationBar.topItem?.rightBarButtonItem?.tintColor = UIColor(red: 113, green: 17, blue: 255, alpha: 0.003)
         getData()
     }
     
@@ -48,7 +49,6 @@ class NoteViewController: UIViewController {
                     self.idArray.append(id)
                 }
                 self.tableView.reloadData()
-                
             }
         } catch {
             
@@ -61,8 +61,6 @@ class NoteViewController: UIViewController {
         }
     }
 }
-
-
 
 //MARK: -TableViewDataSource
 
@@ -106,11 +104,7 @@ extension NoteViewController: UITableViewDataSource {
         }catch {
             
         }
-        
-        
     }
-    
-    
 }
 
 //MARK: -TableViewDelegate
@@ -125,7 +119,4 @@ extension NoteViewController: UITableViewDelegate {
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }
     }
-    
-   
-    
 }

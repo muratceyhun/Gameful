@@ -11,7 +11,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet private weak var collection: UICollectionView!
     
-    
     let viewModel = HomeViewModel()
 
     override func viewDidLoad() {
@@ -23,7 +22,7 @@ class HomeViewController: UIViewController {
     
     fileprivate func viewModelConfiguation() {
         viewModel.coordinator = HomeCoordinator(navigationController: navigationController ?? UINavigationController())
-        viewModel.getAllGameItems()
+        viewModel.getCategoryItems()
         viewModel.errorCallBack = { [weak self] errorMessage in
             print("ERROR: \(errorMessage)")
         }
@@ -38,20 +37,12 @@ class HomeViewController: UIViewController {
 
     }
     
-    
     @IBAction func filterButtonClicked(_ sender: Any) {
         viewModel.coordinator?.filterGames()
         self.collection.reloadData()
-        }
-        
-        
-//        print("clicked")
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let destinationVC = storyboard.instantiateViewController(withIdentifier: "FilterViewController")
-//        destinationVC.modalTransitionStyle = .flipHorizontal
-//        present(destinationVC, animated: true,completion: nil)
-        }
-    
+    }
+}
+
 
 //MARK: -UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
@@ -66,9 +57,7 @@ extension HomeViewController: UICollectionViewDataSource {
         }
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width - 32, height: 120)
-    }
+
 }
 
 //MARK: -UICollectionViewDelegate
@@ -79,11 +68,6 @@ extension HomeViewController: UICollectionViewDelegate {
             guard let gameResult = viewModel.game?.results?[indexPath.item] else { return }
             let detailViewModel = DetailViewModel(gameResult: gameResult)
             destinationVC.viewModel = detailViewModel
-//            destinationVC.gamePhoto = viewModel.game?.results?[indexPath.item].gamePosterImage ?? ""
-//            destinationVC.gameIdNumber = viewModel.game?.results?[indexPath.item].gameID ?? .zero
-//            destinationVC.gameTitleName = viewModel.game?.results?[indexPath.item].gameTitleText ?? ""
-//            destinationVC.rating = viewModel.game?.results?[indexPath.item].ratingText ?? ""
-//            destinationVC.releaseDate = viewModel.game?.results?[indexPath.item].releaseDateText ?? ""
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }
     }
@@ -101,6 +85,9 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 365)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width - 32, height: 120)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

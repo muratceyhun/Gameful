@@ -8,8 +8,7 @@
 import Foundation
 
 
-// For this part QuickType has been used.
-
+//QuickType has been used for this part.
 
 // MARK: - Game
 struct Game: Codable {

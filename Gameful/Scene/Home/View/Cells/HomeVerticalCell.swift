@@ -24,8 +24,6 @@ class HomeVerticalCell: UICollectionViewCell {
     @IBOutlet private weak var gameIDNumber: UILabel!
     @IBOutlet private weak var releaseDateLabel: UILabel!
     
-    
-    
     func configure(data: GameCellProtocol) {
         
         gameImage.loadURL(url: data.gamePosterImage)
@@ -33,7 +31,5 @@ class HomeVerticalCell: UICollectionViewCell {
         gameTitle.text = data.gameTitleText
         ratingLabel.text = data.ratingText
         releaseDateLabel.text = data.releaseDateText
-        
-        
     }
 }

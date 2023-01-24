@@ -10,9 +10,7 @@ import Foundation
 class SearchViewModel {
     var item: Game?
     var gameItems = [GameResult]()
-    
     var text = ""
-    
     var successCallBack: (()->())?
     var errorCallBack: ((String)->())?
     

@@ -38,6 +38,7 @@
 		43903E2E297C64310079F0D7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E2D297C64310079F0D7 /* Coordinator.swift */; };
 		43903E30297C64650079F0D7 /* Storyboard File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E2F297C64650079F0D7 /* Storyboard File.swift */; };
 		43903E32297C65180079F0D7 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E31297C65180079F0D7 /* HomeCoordinator.swift */; };
+		439AF1F429803AC200181120 /* InternetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AF1F329803AC200181120 /* InternetStatus.swift */; };
 		43CB90902975CE7A001E991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB908F2975CE7A001E991F /* AppDelegate.swift */; };
 		43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB90912975CE7A001E991F /* SceneDelegate.swift */; };
 		43CB90972975CE7A001E991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CB90952975CE7A001E991F /* Main.storyboard */; };
@@ -48,7 +49,6 @@
 		43D0AD9C2975D33E0031903D /* InternetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D0AD9B2975D33E0031903D /* InternetHelper.swift */; };
 		43E732392978550E003E7C6E /* HomeVerticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E732372978550E003E7C6E /* HomeVerticalCell.swift */; };
 		43E7323A2978550E003E7C6E /* HomeVerticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E732382978550E003E7C6E /* HomeVerticalCell.xib */; };
-		43FBD7B8297E06F100B30EBF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */; };
 		F6F24B3FB73AC21E2F867FC3 /* Pods_Gameful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +84,7 @@
 		43903E2D297C64310079F0D7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		43903E2F297C64650079F0D7 /* Storyboard File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard File.swift"; sourceTree = "<group>"; };
 		43903E31297C65180079F0D7 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		439AF1F329803AC200181120 /* InternetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetStatus.swift; sourceTree = "<group>"; };
 		43CB908C2975CE7A001E991F /* Gameful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gameful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CB908F2975CE7A001E991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CB90912975CE7A001E991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		43D0AD9B2975D33E0031903D /* InternetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetHelper.swift; sourceTree = "<group>"; };
 		43E732372978550E003E7C6E /* HomeVerticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVerticalCell.swift; sourceTree = "<group>"; };
 		43E732382978550E003E7C6E /* HomeVerticalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVerticalCell.xib; sourceTree = "<group>"; };
-		43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		514033EA5888F9ED2213C9CF /* Pods-Gameful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.debug.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD53A7E8CC597E4FD01A4F4 /* Pods_Gameful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gameful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B179F43165C7CCCBF48B5C /* Pods-Gameful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gameful.release.xcconfig"; path = "Target Support Files/Pods-Gameful/Pods-Gameful.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		430CA4D029771F4400C39A57 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				430CA4E22977213000C39A57 /* EnteranceViewController.swift */,
-				430CA4CE29771EB700C39A57 /* TabBarController.swift */,
+				439AF1F629808B0C00181120 /* Tabbar */,
+				439AF1F529808AFC00181120 /* Entrance */,
 				430CA4D129771F5000C39A57 /* Home */,
 				436B2883297D316400260337 /* Detail */,
 				430CA4D229771F5900C39A57 /* Search */,
@@ -148,10 +148,10 @@
 		430CA4D129771F5000C39A57 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				439AF1F729808B3D00181120 /* Cordinator */,
 				4315E615297A7F2C008EF84E /* Model */,
 				430CA4D629771FD300C39A57 /* View */,
 				4315E616297A7F33008EF84E /* ViewModel */,
-				43903E31297C65180079F0D7 /* HomeCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,6 +169,7 @@
 		430CA4D329771F6800C39A57 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				435A3E9E297F0A0E005F2609 /* FavoriteManager */,
 				430CA4DE2977204800C39A57 /* Model */,
 				430CA4DC2977203700C39A57 /* View */,
 				430CA4DB2977203000C39A57 /* ViewModel */,
@@ -187,9 +188,8 @@
 		430CA4D629771FD300C39A57 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				439AF1F829808B9300181120 /* ViewController */,
 				430CA4E42977313200C39A57 /* Cells */,
-				430CA4C629771AF700C39A57 /* HomeViewController.swift */,
-				43903E13297C30F40079F0D7 /* FilterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,7 +244,6 @@
 			children = (
 				430CA4CC29771B4700C39A57 /* NoteViewController.swift */,
 				4372541A297DF3C100D2047E /* SaveNoteViewController.swift */,
-				43FBD7B7297E06F100B30EBF /* CoreDataManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,8 +292,9 @@
 		4315E617297A7FA3008EF84E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				43D0AD9B2975D33E0031903D /* InternetHelper.swift */,
+				439AF1F329803AC200181120 /* InternetStatus.swift */,
 				43D0AD992975D3290031903D /* InternetManager.swift */,
+				43D0AD9B2975D33E0031903D /* InternetHelper.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,14 +314,6 @@
 				4315E623297B315C008EF84E /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		435A3E9B297F09C7005F2609 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				435A3E9E297F0A0E005F2609 /* FavoriteManager */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		435A3E9E297F0A0E005F2609 /* FavoriteManager */ = {
@@ -384,6 +376,49 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		439AF1F529808AFC00181120 /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4E22977213000C39A57 /* EnteranceViewController.swift */,
+			);
+			path = Entrance;
+			sourceTree = "<group>";
+		};
+		439AF1F629808B0C00181120 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4CE29771EB700C39A57 /* TabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		439AF1F729808B3D00181120 /* Cordinator */ = {
+			isa = PBXGroup;
+			children = (
+				43903E31297C65180079F0D7 /* HomeCoordinator.swift */,
+			);
+			path = Cordinator;
+			sourceTree = "<group>";
+		};
+		439AF1F829808B9300181120 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				430CA4C629771AF700C39A57 /* HomeViewController.swift */,
+				43903E13297C30F40079F0D7 /* FilterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		439AF1F929808C8D00181120 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43CB90982975CE7A001E991F /* Gameful.xcdatamodeld */,
+				43CB909B2975CE7A001E991F /* Assets.xcassets */,
+				43CB90A02975CE7A001E991F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		43CB90832975CE79001E991F = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +440,7 @@
 		43CB908E2975CE7A001E991F /* Gameful */ = {
 			isa = PBXGroup;
 			children = (
-				435A3E9B297F09C7005F2609 /* Manager */,
+				439AF1F929808C8D00181120 /* Resources */,
 				43903E2C297C64160079F0D7 /* Coordinator */,
 				4315E622297B3129008EF84E /* Extension */,
 				430CA4D029771F4400C39A57 /* Scene */,
@@ -413,10 +448,7 @@
 				43CB908F2975CE7A001E991F /* AppDelegate.swift */,
 				43CB90912975CE7A001E991F /* SceneDelegate.swift */,
 				43CB90952975CE7A001E991F /* Main.storyboard */,
-				43CB909B2975CE7A001E991F /* Assets.xcassets */,
 				43CB909D2975CE7A001E991F /* LaunchScreen.storyboard */,
-				43CB90A02975CE7A001E991F /* Info.plist */,
-				43CB90982975CE7A001E991F /* Gameful.xcdatamodeld */,
 			);
 			path = Gameful;
 			sourceTree = "<group>";
@@ -564,7 +596,6 @@
 				430CA4F029776F3600C39A57 /* HomeHorizontalCell.swift in Sources */,
 				43903E16297C31F10079F0D7 /* FilterViewModel.swift in Sources */,
 				43D0AD9A2975D3290031903D /* InternetManager.swift in Sources */,
-				43FBD7B8297E06F100B30EBF /* CoreDataManager.swift in Sources */,
 				43903E1B297C34D80079F0D7 /* FilterTableViewTitleCell.swift in Sources */,
 				430CA4E32977213000C39A57 /* EnteranceViewController.swift in Sources */,
 				430CA4EC2977513300C39A57 /* HomeHeader.swift in Sources */,
@@ -578,6 +609,7 @@
 				435A3EA0297F0ACA005F2609 /* FavoriteManagerProtocol.swift in Sources */,
 				4372541B297DF3C100D2047E /* SaveNoteViewController.swift in Sources */,
 				43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */,
+				439AF1F429803AC200181120 /* InternetStatus.swift in Sources */,
 				43903E30297C64650079F0D7 /* Storyboard File.swift in Sources */,
 				43903E0E297BF6760079F0D7 /* SearchHelper.swift in Sources */,
 				43903E18297C32F60079F0D7 /* FilterModel.swift in Sources */,
@@ -734,12 +766,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gameful/Info.plist;
+				INFOPLIST_FILE = Gameful/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -764,12 +795,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gameful/Info.plist;
+				INFOPLIST_FILE = Gameful/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

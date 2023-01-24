@@ -43,8 +43,6 @@ extension FilterViewController: UITableViewDelegate {
         dismiss(animated: true) { [weak self] in
             self?.filterCallBack?(self?.viewModel.items[indexPath.row].category ?? .all)
         }
-        
-        
     }
 }
 //MARK: -PanModalPresentable

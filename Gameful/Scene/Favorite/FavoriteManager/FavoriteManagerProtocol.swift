@@ -14,7 +14,6 @@ protocol FavoriteManagerProtocol {
     func removeFavorite(_ item: GameResult)
     func isFavorite(_ item: GameResult) -> Bool
     func setDelegate(_ delegate: FavoriteManagerObserver)
-    
 }
 
 protocol FavoriteManagerObserver {

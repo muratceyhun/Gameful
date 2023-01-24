@@ -7,9 +7,6 @@
 
 import Foundation
 
-
-
-
 class FilterViewModel {
     var items = [FilterModel(title: "All", category: .all),
                  FilterModel(title: "Name", category: .name),

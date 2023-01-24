@@ -9,11 +9,12 @@ import Foundation
 
 protocol HomeManagerProtocol {
     func getAllGames(complete: @escaping((Game?, Error?)->()))
-    func getCategoryGames(category:HomeEndPoint, complete: @escaping((Game?, Error?)->()))
+    func getCategoryGames(type :GameCategory, complete: @escaping((Game?, Error?)->()))
 }
 
 class HomeManager: HomeManagerProtocol { // if there is a connection or ...
     static let shared = HomeManager()
+    
     
     func getAllGames(complete: @escaping ((Game?, Error?) -> ())) {
         InternetManager.shared.request(type: Game.self,
@@ -29,13 +30,13 @@ class HomeManager: HomeManagerProtocol { // if there is a connection or ...
         }
     }
     
-    func getCategoryGames(category:HomeEndPoint, complete: @escaping ((Game?, Error?) -> ())) {
+    func getCategoryGames(type :GameCategory, complete: @escaping ((Game?, Error?) -> ())) {
+    
         var url = ""
-        switch category {
+        switch type {
         case .all:
             url = HomeEndPoint.all.path
-        case .genres:
-            url = HomeEndPoint.genres.path
+            
         case .name:
             url = HomeEndPoint.name.path
         case .averageRating:
@@ -44,7 +45,7 @@ class HomeManager: HomeManagerProtocol { // if there is a connection or ...
             url = HomeEndPoint.releaseDate.path
         }
         InternetManager.shared.request(type: Game.self,
-                                       url: HomeEndPoint.releaseDate.path,
+                                       url: "\(url)",
                                        method: .get) { response in
             switch response {
             case .success(let data):
@@ -55,6 +56,7 @@ class HomeManager: HomeManagerProtocol { // if there is a connection or ...
             }
         }
     }
+    
 }
 
 
