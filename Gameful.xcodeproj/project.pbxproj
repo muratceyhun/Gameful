@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4305274E297F134D00872187 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305274D297F134D00872187 /* DetailViewModel.swift */; };
 		430CA4C729771AF700C39A57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C629771AF700C39A57 /* HomeViewController.swift */; };
 		430CA4C929771B0E00C39A57 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4C829771B0E00C39A57 /* SearchViewController.swift */; };
 		430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */; };
@@ -22,6 +23,8 @@
 		4315E61E297A8B9B008EF84E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61D297A8B9B008EF84E /* Game.swift */; };
 		4315E620297A9002008EF84E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E61F297A9002008EF84E /* HomeViewModel.swift */; };
 		4315E624297B315C008EF84E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315E623297B315C008EF84E /* UIImageView+Extension.swift */; };
+		435A3E9D297F09DB005F2609 /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A3E9C297F09DB005F2609 /* FavoriteManager.swift */; };
+		435A3EA0297F0ACA005F2609 /* FavoriteManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A3E9F297F0ACA005F2609 /* FavoriteManagerProtocol.swift */; };
 		436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B2881297D1E4F00260337 /* DetailViewController.swift */; };
 		4372541B297DF3C100D2047E /* SaveNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372541A297DF3C100D2047E /* SaveNoteViewController.swift */; };
 		43903E0E297BF6760079F0D7 /* SearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E0D297BF6760079F0D7 /* SearchHelper.swift */; };
@@ -50,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4305274D297F134D00872187 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		430CA4C629771AF700C39A57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		430CA4C829771B0E00C39A57 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		430CA4CA29771B2700C39A57 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		4315E61D297A8B9B008EF84E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4315E61F297A9002008EF84E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4315E623297B315C008EF84E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		435A3E9C297F09DB005F2609 /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
+		435A3E9F297F0ACA005F2609 /* FavoriteManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagerProtocol.swift; sourceTree = "<group>"; };
 		436B2881297D1E4F00260337 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4372541A297DF3C100D2047E /* SaveNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteViewController.swift; sourceTree = "<group>"; };
 		43903E0D297BF6760079F0D7 /* SearchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelper.swift; sourceTree = "<group>"; };
@@ -310,6 +316,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		435A3E9B297F09C7005F2609 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				435A3E9E297F0A0E005F2609 /* FavoriteManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		435A3E9E297F0A0E005F2609 /* FavoriteManager */ = {
+			isa = PBXGroup;
+			children = (
+				435A3E9C297F09DB005F2609 /* FavoriteManager.swift */,
+				435A3E9F297F0ACA005F2609 /* FavoriteManagerProtocol.swift */,
+			);
+			path = FavoriteManager;
+			sourceTree = "<group>";
+		};
 		436B2883297D316400260337 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +346,7 @@
 		436B2884297D31DC00260337 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4305274D297F134D00872187 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -381,6 +405,7 @@
 		43CB908E2975CE7A001E991F /* Gameful */ = {
 			isa = PBXGroup;
 			children = (
+				435A3E9B297F09C7005F2609 /* Manager */,
 				43903E2C297C64160079F0D7 /* Coordinator */,
 				4315E622297B3129008EF84E /* Extension */,
 				430CA4D029771F4400C39A57 /* Scene */,
@@ -547,7 +572,10 @@
 				43CB90922975CE7A001E991F /* SceneDelegate.swift in Sources */,
 				436B2882297D1E4F00260337 /* DetailViewController.swift in Sources */,
 				430CA4CB29771B2700C39A57 /* FavoriteViewController.swift in Sources */,
+				435A3E9D297F09DB005F2609 /* FavoriteManager.swift in Sources */,
+				4305274E297F134D00872187 /* DetailViewModel.swift in Sources */,
 				4315E61E297A8B9B008EF84E /* Game.swift in Sources */,
+				435A3EA0297F0ACA005F2609 /* FavoriteManagerProtocol.swift in Sources */,
 				4372541B297DF3C100D2047E /* SaveNoteViewController.swift in Sources */,
 				43903E10297BF68A0079F0D7 /* SearchManager.swift in Sources */,
 				43903E30297C64650079F0D7 /* Storyboard File.swift in Sources */,

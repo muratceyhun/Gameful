@@ -29,6 +29,12 @@ class InternetHelper {
     private let filterPlatforms = "platforms?key="
     private let imageBasePath = "https://media.rawg.io/media/games/"
     
+    
+    
+    //Ordering for name
+    //https://api.rawg.io/api/games?key=2bc9a39de38844e0afee58925b2a3480&ordering=name
+    
+    
     func requestUrl(url: String) -> String {
         baseURL + filterGames + apiKey + url
     }

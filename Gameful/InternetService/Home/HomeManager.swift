@@ -12,7 +12,7 @@ protocol HomeManagerProtocol {
     func getCategoryGames(category:HomeEndPoint, complete: @escaping((Game?, Error?)->()))
 }
 
-class HomeManager: HomeManagerProtocol {
+class HomeManager: HomeManagerProtocol { // if there is a connection or ...
     static let shared = HomeManager()
     
     func getAllGames(complete: @escaping ((Game?, Error?) -> ())) {
@@ -36,15 +36,15 @@ class HomeManager: HomeManagerProtocol {
             url = HomeEndPoint.all.path
         case .genres:
             url = HomeEndPoint.genres.path
-        case .popularity:
-            url = HomeEndPoint.popularity.path
+        case .name:
+            url = HomeEndPoint.name.path
         case .averageRating:
             url = HomeEndPoint.averageRating.path
         case .releaseDate:
             url = HomeEndPoint.releaseDate.path
         }
         InternetManager.shared.request(type: Game.self,
-                                       url: url,
+                                       url: HomeEndPoint.releaseDate.path,
                                        method: .get) { response in
             switch response {
             case .success(let data):

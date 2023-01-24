@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L3E-IA-b1Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IEi-dq-oqY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GAMEFUL-->
+        <!--Gameful-->
         <scene sceneID="4yX-pi-pp1">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rr8-ky-DRf" customClass="HomeViewController" customModule="Gameful" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CaE-TN-wtb">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="5ol-Vi-uWf">
                                     <size key="itemSize" width="128" height="128"/>
@@ -42,7 +42,7 @@
                             <constraint firstItem="9Y5-Z0-zoE" firstAttribute="bottom" secondItem="CaE-TN-wtb" secondAttribute="bottom" id="yBM-YX-i6m"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GAMEFUL" largeTitleDisplayMode="always" id="SWX-xL-VyW">
+                    <navigationItem key="navigationItem" title="Gameful" largeTitleDisplayMode="always" id="SWX-xL-VyW">
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="hZf-eV-74D">
                             <connections>
                                 <action selector="filterButtonClicked:" destination="rr8-ky-DRf" id="BCj-UF-ew1"/>
@@ -172,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-Nu-W8s">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cQb-gX-dZd">
@@ -288,7 +288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamefulIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bcJ-iC-osK">
-                                <rect key="frame" x="71" y="128" width="251" height="329"/>
+                                <rect key="frame" x="71" y="84" width="251" height="373"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7i-5I-kRP">
                                 <rect key="frame" x="154.33333333333334" y="557" width="84.333333333333343" height="37.333333333333371"/>
@@ -348,9 +348,15 @@
                         <imageReference key="image" image="homekit" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CZO-tT-YMu">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="CZO-tT-YMu">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.44193417740000002" green="0.068588760750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.44193417740000002" green="0.068588760750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -401,11 +407,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RMF-4j-jSS">
                                 <rect key="frame" x="353" y="118.66666666666667" width="24" height="23.666666666666671"/>
                                 <color key="tintColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.89171150659999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="6A8-bo-sHx"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-k1-Wpm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-k1-Wpm">
                                 <rect key="frame" x="16" y="179.00000000000003" width="361" height="258.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -481,6 +488,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rvq-Ya-ivf"/>
                     <connections>
+                        <outlet property="favoriteImage" destination="RMF-4j-jSS" id="wbk-GD-Jn7"/>
                         <outlet property="gameId" destination="PzE-4L-MzF" id="4wE-ac-2Wm"/>
                         <outlet property="gameImage" destination="xeg-k1-Wpm" id="CPb-fw-7W7"/>
                         <outlet property="gameTitle" destination="y8F-Ds-Gx0" id="CB6-xp-JE6"/>
@@ -604,24 +612,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VZ-tf-n9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3698" y="665"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EvD-XG-NDd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B98-0T-I8E" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sNV-Vl-8Rl">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="IEi-dq-oqY" kind="relationship" relationship="rootViewController" id="w7e-4R-d8u"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6mE-IO-Id0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="312" y="-1213"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NOS-YZ-7p8">

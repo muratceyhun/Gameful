@@ -11,23 +11,15 @@ class EnteranceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     
-        
     }
     
     @IBAction func enterButtonClicked(_ sender: Any) {
 
-        let mainstoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = mainstoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        destinationVC.present(destinationVC, animated: true)
-
-        destinationVC.modalPresentationStyle = .fullScreen
-        destinationVC.modalTransitionStyle = .flipHorizontal
-        
-
-
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController {
+            destinationVC.modalPresentationStyle = .fullScreen
+            destinationVC.modalTransitionStyle = .flipHorizontal
+            self.present(destinationVC, animated: true)
+                    
+        }
     }
-    
-
 }
