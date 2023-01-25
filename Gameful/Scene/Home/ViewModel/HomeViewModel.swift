@@ -60,7 +60,6 @@ class HomeViewModel {
         request.returnsObjectsAsFaults = false // Apple documentation says this code line increase the performance of cell phone.
         do {
             let results = try context.fetch(request)
-            print("\(results.count)")
             for result in results as! [NSManagedObject] {
                     
             }

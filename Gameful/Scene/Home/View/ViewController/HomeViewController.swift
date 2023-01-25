@@ -51,7 +51,6 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeVerticalCell", for: indexPath) as! HomeVerticalCell
-        print(viewModel.game?.results?[indexPath.item].gameTitleText ?? "")
         if let game = viewModel.game?.results?[indexPath.item] {
             cell.configure(data: game)
         }

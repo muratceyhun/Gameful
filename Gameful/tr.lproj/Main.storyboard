@@ -343,9 +343,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1MX-oZ-FRB"/>
-                    <connections>
-                        <outlet property="entranceLabel" destination="S7i-5I-kRP" id="CD0-8Y-MmK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kin-0J-AXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,7 +681,6 @@
             <point key="canvasLocation" x="5763" y="665"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.4431372549" green="0.066666666669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="gamefulIcon" width="1133" height="856"/>
         <image name="homekit" catalog="system" width="128" height="104"/>

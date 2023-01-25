@@ -18,7 +18,6 @@ class FavoriteViewController: UIViewController, FavoriteManagerObserver {
     }
     
     func itemChanged(items: [GameResult]) {
-        print(items)
     }
 }
 
