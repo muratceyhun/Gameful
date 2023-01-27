@@ -19,7 +19,7 @@ class InternetHelper {
     // https://api.rawg.io/api/games?key=2bc9a39de38844e0afee58925b2a3480
     
 
-//https://api.rawg.io/api/games?games=&key=2bc9a39de38844e0afee58925b2a3480&search=
+    //https://api.rawg.io/api/games?games=&key=2bc9a39de38844e0afee58925b2a3480&search=
     
     static let shared = InternetHelper()
     private let baseURL = "https://api.rawg.io/api/"
